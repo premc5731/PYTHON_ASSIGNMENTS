@@ -1,8 +1,8 @@
-def ChkPrime(No):
-    Flag = True
-    for i in range(2,((No//2) + 1)):
-        if No % i == 0:
-            Flag = False
+def ChkPrime(no):
+    flag = True
+    for i in range(2,((no//2) + 1)):
+        if no % i == 0:
+            flag = False
             break
     
-    return Flag
+    return flag

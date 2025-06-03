@@ -1,4 +1,4 @@
-# 2.Write a program which accept N numbers from user and store it into List. Return Maximum
+# 2.Write a program which accept N numbers from user and store it into List. Return maximum
 # number from that List.
 # Input : Number of elements : 7
 # Input Elements : 13 5 45 7 4 56 34
@@ -6,17 +6,17 @@
 
 def main():
     print("Enter a number : ",end="")
-    Size = int(input())
-    Data = []
-    Max = -float('inf')
-    for i in range(Size):
-        Data.append(int(input()))
+    size = int(input())
+    data = []
+    max = -float('inf')
+    for i in range(size):
+        data.append(int(input()))
     
-    for i in range(Size):
-        if Data[i] > Max:
-            Max = Data[i]
+    for i in range(size):
+        if data[i] > max:
+            max = data[i]
 
-    print("Maximum element is : ",Max)
+    print("maximum element is : ",max)
 
 if __name__ == "__main__":
     main()

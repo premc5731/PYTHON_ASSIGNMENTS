@@ -6,16 +6,16 @@
 # Input : 8 Output : Even Number
 
 
-def ChkNum(No):
-    if(No % 2 == 0):
+def ChkNum(no):
+    if(no % 2 == 0):
         print("Number is Even")
     else:
         print("Number is Odd")
 
 def main():
     print("Enter a number : ",end="")
-    Value = int(input())
-    ChkNum(Value)
+    value = int(input())
+    ChkNum(value)
 
 
 if __name__ == "__main__":

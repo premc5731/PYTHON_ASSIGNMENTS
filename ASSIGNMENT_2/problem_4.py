@@ -1,21 +1,21 @@
 # 4.Write a program which accept one number form user and return addition of its factors.
 # Input : 12 Output : 16 (1+2+3+4+6)
-def FactorsSum(No):
-    Sum = 0
-    if No < 0:
-        No = -No
-    for i in range(1,(int((No/2))+1)):
+def Factorssum(no):
+    sum = 0
+    if no < 0:
+        no = -no
+    for i in range(1,(int((no/2))+1)):
         print("i",i)
-        if No % i == 0:
-            Sum = Sum + i
+        if no % i == 0:
+            sum = sum + i
 
-    return Sum
+    return sum
 
 def main():
     print("Enter a number : ",end="")
     value = int(input())
-    Result = FactorsSum(value)
-    print("Summation of factors is : ",Result)
+    result = Factorssum(value)
+    print("summation of factors is : ",result)
 
 if __name__ == "__main__":
     main()

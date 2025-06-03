@@ -8,21 +8,21 @@ import calculator_module as calc
 
 def main():
     print("Enter first number : ",end="")
-    Value1 = int(input())
+    value1 = int(input())
     print("Enter second number : ",end="")
-    Value2 = int(input())
+    value2 = int(input())
 
-    Result = calc.Add(Value1,Value2)
-    print("Addition is : ",Result)
+    result = calc.Add(value1,value2)
+    print("Addition is : ",result)
 
-    Result = calc.Sub(Value1,Value2)
-    print("Subraction is : ",Result)
+    result = calc.Sub(value1,value2)
+    print("Subraction is : ",result)
 
-    Result = calc.Mult(Value1,Value2)
-    print("Multiplication is : ",Result)
+    result = calc.Mult(value1,value2)
+    print("Multiplication is : ",result)
 
-    Result = calc.Div(Value1,Value2)
-    print("Division is : ",Result)
+    result = calc.Div(value1,value2)
+    print("Division is : ",result)
 
 if __name__ == "__main__":
     main()

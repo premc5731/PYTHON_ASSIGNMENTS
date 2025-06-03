@@ -12,22 +12,22 @@ from functools import reduce
 
 
 def CheckPrime(No):
-    Flag = True
+    flag = True
     for i in range(2,(No//2)+1):
         if(No % i == 0):
-            Flag = False
+            flag = False
             break
     
-    return Flag
+    return flag
 
 def Mult(No):
     return (No * 2)
 
-def Max(No1,No2):
-    if(No1 > No2):
-        return No1
+def Max(no1,no2):
+    if(no1 > no2):
+        return no1
     else:
-        return No2
+        return no2
     
 
 def main():

@@ -6,8 +6,8 @@ def DisplayLen(name):
     
 def main():
     print("Enter your name : ",end ="")
-    Name = input()
-    DisplayLen(Name)
+    name = input()
+    DisplayLen(name)
 
 if __name__ == "__main__":
     main()

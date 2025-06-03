@@ -5,14 +5,14 @@
 # Output : 130
 def main():
     print("Enter a number : ",end="")
-    Size = int(input())
-    Data = []
-    Sum = 0
-    for i in range(Size):
-        Data.append(int(input()))
-    for i in Data:
-        Sum = Sum + i
-    print("Summation is : ",Sum)
+    size = int(input())
+    data = []
+    sum = 0
+    for i in range(size):
+        data.append(int(input()))
+    for i in data:
+        sum = sum + i
+    print("summation is : ",sum)
 
 
 if __name__ == "__main__":

@@ -12,28 +12,28 @@
 from functools import reduce
 
 
-Range = lambda No: (No>= 70 and No <=90)
-Increase = lambda No: No + 10
-Product = lambda No1,No2 : No1*No2
+range = lambda no: (no>= 70 and no <=90)
+increase = lambda no: no + 10
+product = lambda no1,no2 : no1*no2
 
 def main():
-    Data = []
+    data = []
     print("Enter size : ",end = "")
     size = int(input())
 
     print("Enter numbers")
     for i in range(size):
         element = int(input())
-        Data.append(element)
+        data.append(element)
 
-    FData = list(filter(Range,Data))
-    print("Filtered Data : ",FData)
+    Fdata = list(filter(range,data))
+    print("Filtered data : ",Fdata)
 
-    MData = list(map(Increase,FData))
-    print("Mapped Data : ",MData)
+    Mdata = list(map(increase,Fdata))
+    print("Mapped data : ",Mdata)
 
-    RData = reduce(Product,MData)
-    print("The final result is : ",RData)
+    Rdata = reduce(product,Mdata)
+    print("The final result is : ",Rdata)
    
 
 

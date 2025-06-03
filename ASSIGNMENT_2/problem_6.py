@@ -9,10 +9,10 @@
 
 def main():
     print("Enter a number : ",end="")
-    Value = int(input())
+    value = int(input())
 
-    for i in range(Value):
-        for j in range(i,Value):
+    for i in range(value):
+        for j in range(i,value):
             print("*",end="")
         print("")
 

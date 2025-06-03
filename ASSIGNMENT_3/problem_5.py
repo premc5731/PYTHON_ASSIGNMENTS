@@ -7,24 +7,24 @@
 # Output : 32 (13 + 5 + 7 +2 + 5)
 import MARVELLOUSNUM 
 
-def ListPrime(Data):
-    Sum = 0
-    for i in range(len(Data)):
-        if MARVELLOUSNUM.ChkPrime(Data[i]):
-            Sum = Sum + Data[i]
+def ListPrime(data):
+    sum = 0
+    for i in range(len(data)):
+        if MARVELLOUSNUM.ChkPrime(data[i]):
+            sum = sum + data[i]
 
-    return Sum
+    return sum
 
 def main():
-    Data = []
+    data = []
     print("Enter a number : ",end="")
-    Size = int(input())
+    size = int(input())
 
-    for i in range(Size):
-        Data.append(int(input()))
+    for i in range(size):
+        data.append(int(input()))
 
-    Result = ListPrime(Data)
-    print("The summation of prime numbers is : ",Result)
+    result = ListPrime(data)
+    print("The summation of prime numbers is : ",result)
 
 
 if __name__ == "__main__":

@@ -10,28 +10,28 @@
 from functools import reduce
 
 
-CheckEven = lambda No: No % 2 == 0
-Square = lambda No: No**2
-Sum = lambda No1,No2: No1 + No2
+CheckEven = lambda no: no % 2 == 0
+Square = lambda no: no**2
+Sum = lambda no1,no2: no1 + no2
 
 def main():
-    Data = []
+    data = []
     print("Enter size : ",end="")
     size = int(input())
 
     print("Enter numbers : ")
     for i in range(size):
         element = int(input())
-        Data.append(element)
+        data.append(element)
 
-    FData = list(filter(CheckEven,Data))
-    print("Filtered Data : ",FData)
+    Fdata = list(filter(CheckEven,data))
+    print("Filtered data : ",Fdata)
 
-    MData = list(map(Square,FData))
-    print("Mapped Data : ",MData)
+    Mdata = list(map(Square,Fdata))
+    print("Mapped data : ",Mdata)
 
-    RData = reduce(Sum,MData)
-    print("The Result is : ",RData)
+    Rdata = reduce(Sum,Mdata)
+    print("The Result is : ",Rdata)
 
     
 if __name__ == "__main__":

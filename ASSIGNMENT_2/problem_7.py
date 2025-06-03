@@ -8,9 +8,9 @@
 
 def main():
     print("Enter a number : ",end="")
-    Value = int(input())
-    for i in range(Value):
-        for j in range(1,Value+1):
+    value = int(input())
+    for i in range(value):
+        for j in range(1,value+1):
             print(j,"",end="")
         print("")
 

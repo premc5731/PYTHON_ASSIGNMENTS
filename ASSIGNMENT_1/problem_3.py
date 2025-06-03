@@ -4,18 +4,18 @@
 
 
 
-def Add(No1,No2):
+def Add(no1,no2):
     result = 0.0
-    result = No1 + No2
+    result = no1 + no2
     return result
 
 def main():
     print("Enter the first number : ", end="")
-    Value1 = int(float(input()))
+    value1 = int(float(input()))
     print("Enter the second number : ", end="")
-    Value2 = int(float(input()))
+    value2 = int(float(input()))
     result = 0
-    result = Add(Value1, Value2)
+    result = Add(value1, value2)
     print("The result is :",result)
 
 

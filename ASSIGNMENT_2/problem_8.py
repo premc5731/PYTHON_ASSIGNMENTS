@@ -7,8 +7,8 @@
 # 1 2 3 4 5
 def main():
     print("Enter a number : ",end="")
-    Value = int(input())
-    for i in range(1,Value+1):
+    value = int(input())
+    for i in range(1,value+1):
         for j in range(1,i+1):
             print(j," ",end="")
         print("")

@@ -1,19 +1,19 @@
-def Add(No1,No2):
-    Ans = No1 + No2
-    return Ans
+def Add(no1,no2):
+    ans = no1 + no2
+    return ans
 
-def Sub(No1,No2):
-    Ans = No1 - No2
-    return Ans
+def Sub(no1,no2):
+    ans = no1 - no2
+    return ans
 
-def Mult(No1,No2):
-    Ans = No1 * No2
-    return Ans
+def Mult(no1,no2):
+    ans = no1 * no2
+    return ans
 
-def Div(No1,No2):
+def Div(no1,no2):
     try:    
-        Ans = No1 / No2
+        ans = no1 / no2
     except(ArithmeticError):
         print("Arithemetic error")
-    return Ans
+    return ans
 

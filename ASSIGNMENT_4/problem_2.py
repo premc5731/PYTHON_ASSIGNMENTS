@@ -5,13 +5,13 @@
 
 def main():
     print("Enter first number : ",end = "")
-    Value1 = int(input())
+    value1 = int(input())
     print("Enter second number : ",end = "")
-    Value2 = int(input())
-    Mult = lambda No1,No2: No1*No2
-    Result = Mult(Value1,Value2)
+    value2 = int(input())
+    mult = lambda No1,No2: No1*No2
+    result = mult(value1,value2)
     
-    print(f"The Multiplication is : {Result}")
+    print(f"The multiplication is : {result}")
 
 
 if __name__ == "__main__":

@@ -6,21 +6,21 @@
 # Output : 3
 
 def main():
-    Data = []
-    Max = -float('inf')
+    data = []
+    max = -float('inf')
     freq = 0
 
     print("Enter a number : ",end="")
-    Size = int(input())
+    size = int(input())
     
-    for i in range(Size):
-        Data.append(int(input()))
+    for i in range(size):
+        data.append(int(input()))
 
     print("Element to search : ",end="")
     search = int(input())
 
-    for i in Data:
-        if Data[i] == search:
+    for i in data:
+        if data[i] == search:
             freq += 1
             
     print("Frequency is : ",freq)

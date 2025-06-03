@@ -5,11 +5,11 @@
 
 def main():
     print("Enter a number : ",end = "")
-    Value = int(input())
-    Square = lambda x: 2**x
-    Result = Square(Value)
+    value = int(input())
+    square = lambda x: 2**x
+    result = square(value)
     
-    print(f"The Result is : {Result}")
+    print(f"The result is : {result}")
 
 
 if __name__ == "__main__":
