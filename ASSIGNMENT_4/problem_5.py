@@ -11,17 +11,17 @@
 from functools import reduce
 
 
-def CheckPrime(No):
+def CheckPrime(no):
     flag = True
-    for i in range(2,(No//2)+1):
-        if(No % i == 0):
+    for i in range(2,(no//2)+1):
+        if(no % i == 0):
             flag = False
             break
     
     return flag
 
-def Mult(No):
-    return (No * 2)
+def Mult(no):
+    return (no * 2)
 
 def Max(no1,no2):
     if(no1 > no2):
