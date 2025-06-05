@@ -7,13 +7,13 @@ Mult = lambda x , y: x*y
 
 def main():
     print("Enter first number : ",end="")
-    Value1 = int(input())
+    value1 = int(input())
 
     print("Enter second number : ",end="")
-    Value2 = int(input())
+    value2 = int(input())
 
-    Ret = Mult(Value1,Value2)
-    print("Multiplication is ",Ret)
+    ret = Mult(value1,value2)
+    print("Multiplication is ",ret)
 
 if __name__ == "__main__":
     main()

@@ -7,12 +7,12 @@ import threading
 import time
 
 
-def Summation(No):
-    Sum = 0
-    for i in range(No+1):
-        Sum = Sum + i
+def Summation(no):
+    sum = 0
+    for i in range(no+1):
+        sum = sum + i
 
-    print("Summation is : ",Sum)
+    print("Summation is : ",sum)
 
 def main():
 
@@ -21,7 +21,7 @@ def main():
     start_time = time.time()
     Summation(Value)
     end_time = time.time()
-    print("Normal function execution time : ",(end_time - start_time))
+    print("normal function execution time : ",(end_time - start_time))
 
     start_time = time.time()
     T1 = threading.Thread(target = Summation, args = (Value,))

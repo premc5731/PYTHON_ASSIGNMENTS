@@ -9,9 +9,9 @@ Even = lambda x: x % 2 == 0
 def main():
     Data = []
     print("Enter a number : ",end="")
-    Value = int(input())
+    value = int(input())
 
-    for i in range(Value):
+    for i in range(value):
         Data.append(int(input()))
 
     FData = list(filter(Even,Data))

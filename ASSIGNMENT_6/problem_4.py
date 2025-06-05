@@ -2,27 +2,27 @@
 # Expected Input:
 # Enter a number: 5
 # Expected Output:
-# Factorial of 5 is: 120
+# factorial of 5 is: 120
 
-def Factorial(No):
+def factorial(no):
 
-    if( No < 0):
+    if( no < 0):
         print("Invalid input")
         return
     
-    Fact = 1
+    fact = 1
 
-    for i in range(1,No+1):
-        Fact = Fact * i
+    for i in range(1,no+1):
+        fact = fact * i
 
-    return Fact
+    return fact
 
 def main():
     print("Enter a number : ",end="")
-    Value = int(input())
-    Ret = Factorial(Value)
+    value = int(input())
+    ret = factorial(value)
 
-    print("Factorial of {} is {}".format(Value,Ret))
+    print("factorial of {} is {}".format(value,ret))
     
 
 if __name__ == "__main__":

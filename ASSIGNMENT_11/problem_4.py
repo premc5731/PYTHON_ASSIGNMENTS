@@ -3,25 +3,25 @@
 # power(2, 3) → 8
 
 
-iCnt = 1
-Result = 1
+icnt = 1
+result = 1
 
 def Power(X,N):
-    global iCnt,Result
+    global icnt,result
 
-    # while(iCnt <= N):
-    #     Result= Result * X
-    #     iCnt += 1
+    # while(icnt <= N):
+    #     result= result * X
+    #     icnt += 1
 
-    if(iCnt <= N):
-        Result= Result * X
-        iCnt += 1
+    if(icnt <= N):
+        result= result * X
+        icnt += 1
         Power(X,N)
 
-    return Result
+    return result
 def main():
-    Result = Power(2,3)
-    print("Result : ",Result)
+    result = Power(2,3)
+    print("result : ",result)
 
 if __name__ == "__main__":
     main()

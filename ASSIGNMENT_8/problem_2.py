@@ -4,21 +4,21 @@
 # factors of given number. After execution of both the thread gets completed main thread should display message as “exit from main”.
 import threading
 
-def EvenFact(No):
-    Sum = 0
-    for i in range(1,(No//2)+1):
-        if((No % i == 0) and (i % 2 == 0)):
-            Sum = Sum + i
+def EvenFact(no):
+    sum = 0
+    for i in range(1,(no//2)+1):
+        if((no % i == 0) and (i % 2 == 0)):
+            sum = sum + i
 
-    print("Even factors Sum : ",Sum)
+    print("Even factors sum : ",sum)
 
-def OddFact(No):
-    Sum = 0
-    for i in range(1,(No//2)+1):
-        if((No % i == 0) and (i % 2 != 0)):
-            Sum = Sum + i
+def OddFact(no):
+    sum = 0
+    for i in range(1,(no//2)+1):
+        if((no % i == 0) and (i % 2 != 0)):
+            sum = sum + i
 
-    print("Odd factors Sum : ",Sum)
+    print("Odd factors sum : ",sum)
 
 
 def main():

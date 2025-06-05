@@ -8,33 +8,33 @@
 # Perimeter: 16
 
 def Area(len, wid):
-    Result = 0
-    Result = len * wid
+    result = 0
+    result = len * wid
 
-    return Result
+    return result
 
 def Perimeter(len, wid):
-    Result = 0
-    Result = 2 * (len + wid)
+    result = 0
+    result = 2 * (len + wid)
 
-    return Result
+    return result
 
 def main():
-    Length = 0
-    Width = 0
-    Ret = 0
+    length = 0
+    width = 0
+    ret = 0
 
-    print("Enter Length : ",end="")
-    Length = int(input())
+    print("Enter length : ",end="")
+    length = int(input())
 
-    print("Enter Width : ",end="")
-    Width = int(input())
+    print("Enter width : ",end="")
+    width = int(input())
 
-    Ret = Area(Length,Width)
-    print("Area is : ",Ret)
+    ret = Area(length,width)
+    print("Area is : ",ret)
 
-    Ret = Perimeter(Length,Width)
-    print("Perimeter is : ",Ret)
+    ret = Perimeter(length,width)
+    print("Perimeter is : ",ret)
 
     
 if __name__ == "__main__":

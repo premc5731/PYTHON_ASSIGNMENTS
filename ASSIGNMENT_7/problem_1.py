@@ -13,13 +13,13 @@ cube = lambda x: x**3
 
 def main():
     print("Enter a number : ",end="")
-    Value = int(input())
+    value = int(input())
 
-    SRet = square(Value)
-    CRet = cube(Value)
+    SRet = square(value)
+    CRet = cube(value)
 
-    print("Square of {} is {}".format(Value,SRet))
-    print("Cube of {} is {}".format(Value,CRet))    
+    print("Square of {} is {}".format(value,SRet))
+    print("Cube of {} is {}".format(value,CRet))    
 
 if __name__ == "__main__":
     main()

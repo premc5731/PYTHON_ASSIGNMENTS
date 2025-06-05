@@ -2,28 +2,28 @@
 # Write a recursive function to count how many zeros are in the given number.
 # count_zeros(1020300) → 4
 
-iCount = 0
+icount = 0
 
-def Count(No):
-    global iCount
-    # while(No !=0):
-    #     Digit = No % 10
-    #     if(Digit == 0):
+def Count(no):
+    global icount
+    # while(no !=0):
+    #     digit = no % 10
+    #     if(digit == 0):
     #         Count +=1
-    #     No = No // 10
+    #     no = no // 10
 
-    if(No !=0):
-        Digit = No % 10
-        if(Digit == 0):
-            iCount +=1
-        No = No // 10
-        Count(No)
+    if(no !=0):
+        digit = no % 10
+        if(digit == 0):
+            icount +=1
+        no = no // 10
+        Count(no)
         
-    return iCount
+    return icount
 
 def main():
-    Result = Count(1020300)
-    print("no of zeros are : ",Result)
+    result = Count(1020300)
+    print("no of zeros are : ",result)
 
 if __name__ == "__main__":
     main()

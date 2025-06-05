@@ -5,12 +5,12 @@ import multiprocessing
 import time
 
 
-def factorial(No):
-        Fact = 1
+def Factorial(No):
+        fact = 1
         for i in range(No,0,-1):
-            Fact = Fact * i 
+            fact = fact * i 
 
-        return Fact
+        return fact
 
 
         
@@ -19,21 +19,21 @@ def main():
     print("Enter the size : ",end = "")
     size = int(input())
 
-    Data = []
-    Result = []
+    data = []
+    result = []
 
     for i in range(size):
-        Data.append(int(input()))
+        data.append(int(input()))
 
     P = multiprocessing.Pool()
-    Result = P.map(factorial,Data)
+    result = P.map(Factorial,data)
 
     P.close()
     P.join()
 
     end_time = time.time()
 
-    print("factorial is : ",Result)
+    print("factorial is : ",result)
     print("time taken : ",(end_time - start_time))
 
     print("End of main")

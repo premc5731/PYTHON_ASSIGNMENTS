@@ -3,10 +3,10 @@
 # 1 2 3 4 ... 50
 
 def main():
-    Cnt = 1
-    while(Cnt <= 50):
-        print(Cnt)
-        Cnt += 1
+    cnt = 1
+    while(cnt <= 50):
+        print(cnt)
+        cnt += 1
 
 
 if __name__ == "__main__":

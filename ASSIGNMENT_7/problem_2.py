@@ -10,9 +10,9 @@ double = lambda x: x*2
 def main():
     Data = []
     print("Enter a number : ",end="")
-    Value = int(input())
+    value = int(input())
 
-    for i in range(Value):
+    for i in range(value):
         Data.append(int(input()))
 
     MData = list(map(double,Data))

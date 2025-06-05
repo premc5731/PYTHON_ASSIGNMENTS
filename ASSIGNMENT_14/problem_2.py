@@ -3,36 +3,36 @@
 # Area: 50, Perimeter: 30
 
 class Rectangle:
-    def __init__(self,Len,Wid):
-        self.Length = Len
-        self.Width = Wid
+    def __init__(self,len,wid):
+        self.length = len
+        self.width = wid
     
     def Area(self):
-        Result = 0.0
-        Result = self.Length * self.Width
-        return Result
+        result = 0.0
+        result = self.length * self.width
+        return result
     
     def Perimeter(self):
-        Result = 0.0
-        Result = 2*(self.Length + self.Width)
-        return Result
+        result = 0.0
+        result = 2*(self.length + self.width)
+        return result
     
 def main():
-    Ret = 0.0
+    ret = 0.0
 
     print("Enter the length : ",end = "")
-    Value1 = int(input())
+    value1 = int(input())
 
     print("Enter the width : ",end = "")
-    Value2 = int(input())
+    value2 = int(input())
 
-    Obj1 = Rectangle(Value1,Value2)
+    Obj1 = Rectangle(value1,value2)
 
-    Ret = Obj1.Area()
-    print("Area of rectangel is : ",Ret)
+    ret = Obj1.Area()
+    print("Area of rectangel is : ",ret)
 
-    Ret = Obj1.Perimeter()
-    print("Perimeter of rectangle is : ",Ret)
+    ret = Obj1.Perimeter()
+    print("Perimeter of rectangle is : ",ret)
 
 if __name__ == "__main__":
     main()

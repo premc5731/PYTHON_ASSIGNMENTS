@@ -1,24 +1,24 @@
-# 6. Sum of First N Natural Numbers
+# 6. sum of First N Natural Numbers
 # Write a recursive function to calculate sum from 1 to n.
 # sum_n(5) → 15
 
-Sum = 0
-iCnt = 1
+sum = 0
+icnt = 1
 
 def SumN(No):
-    global Sum, iCnt
+    global sum, icnt
 
-    if(iCnt <= No):
-        Sum = Sum + iCnt
-        iCnt += 1
+    if(icnt <= No):
+        sum = sum + icnt
+        icnt += 1
         SumN(No)
 
-    return Sum
+    return sum
 
 
 def main():
-    Result = SumN(5)
-    print("Sum of natural numbers is : ",Result)
+    result = SumN(5)
+    print("sum of natural numbers is : ",result)
 
 if __name__ == "__main__":
     main()

@@ -1,50 +1,50 @@
 # 2. Write a program which contains one class named as Circle.
-# Circle class contains three instance variables as Radius ,Area, Circumference.
+# Circle class contains three instance variables as radius ,area, circumference.
 # That class contains one class variable as PI which is initialise to 3.14.
 # Inside init method initialise all instance variables to 0.0.
 # The re a re th ree in s tan ce me thod s in side cla s s a s A c cep t() , Cal cula teA rea() ,
-# CalculateCircumference(), Display().
-# Accept method will accept value of Radius from user.
-# CalculateArea() method will calculate area of circle and store it into instance variable Area.
-# CalculateCircumference() method will calculate circumference of circle and store it into instance
-# variable Circumference.
-# And Display() method will display value of all the instance variables as Radius , Area,
-# Circumference.
+# Calculatecircumference(), Display().
+# Accept method will accept value of radius from user.
+# Calculatearea() method will calculate area of Circle and store it into instance variable area.
+# Calculatecircumference() method will calculate circumference of Circle and store it into instance
+# variable circumference.
+# And Display() method will display value of all the instance variables as radius , area,
+# circumference.
 # After designing the above class call all instance methods by creating multiple objects.
 
 class Circle:
     PI = 3.14
 
     def __init__(self):
-        self.Rad = 0.0
-        self.Area = 0.0
-        self.Circ = 0.0
+        self.rad = 0.0
+        self.area = 0.0
+        self.circ = 0.0
 
-    def Accept(self,Rad):
-        self.Rad = Rad
+    def Accept(self,rad):
+        self.rad = rad
 
-    def CalculateArea(self):
-        self.Area = Circle.PI * self.Rad * self.Rad
+    def Calculatearea(self):
+        self.area = Circle.PI * self.rad * self.rad
 
-    def CalculateCircumference(self):
-        self.Circ = 2 * Circle.PI * self.Rad
+    def Calculatecircumference(self):
+        self.circ = 2 * Circle.PI * self.rad
 
     def Display(self):
-        print("Radius : ",self.Rad)
-        print("Area : ",self.Area)
-        print("Circumference : ",self.Circ)
+        print("radius : ",self.rad)
+        print("area : ",self.area)
+        print("circumference : ",self.circ)
 
 def main():
     Obj1 = Circle()
     Obj1.Accept(10)
-    Obj1.CalculateArea()
-    Obj1.CalculateCircumference()
+    Obj1.Calculatearea()
+    Obj1.Calculatecircumference()
     Obj1.Display()
 
     Obj2 = Circle()
     Obj2.Accept(20)
-    Obj2.CalculateArea()
-    Obj2.CalculateCircumference()
+    Obj2.Calculatearea()
+    Obj2.Calculatecircumference()
     Obj2.Display()
 
 

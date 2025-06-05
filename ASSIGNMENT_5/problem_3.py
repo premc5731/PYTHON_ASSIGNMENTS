@@ -6,23 +6,23 @@
 # Expected Output:
 # Eligible to vote.
 
-def VotAgeCheck(No):
-    Result = True
-    if No < 18:
-        Result = False
+def VotAgeCheck(no):
+    result = True
+    if no < 18:
+        result = False
 
-    return Result
+    return result
 def main():
-    Ret = 0
+    ret = 0
     print("Enter your age : ",end = "")
     age = int(input())
 
-    Ret = VotAgeCheck(age)
+    ret = VotAgeCheck(age)
 
-    if(Ret == True):
+    if(ret == True):
         print("Eligible to vote")
     else:
-        print("Not Eligible to vote")
+        print("not Eligible to vote")
        
 if __name__ == "__main__":
     main()

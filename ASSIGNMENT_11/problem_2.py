@@ -1,28 +1,28 @@
-# 2. Factorial Using Recursion
+# 2. factorial Using Recursion
 # Write a recursive function to calculate factorial of a number.
 # factorial(5) → 120
 
-Fact = 1
-iCnt = 1
+fact = 1
+icnt = 1
 
-def Factorial(No):
-    global Fact
-    global iCnt
+def factorial(no):
+    global fact
+    global icnt
 
-    # while(iCnt <= No):
-    #     Fact = Fact * iCnt
-    #     iCnt = iCnt + 1
+    # while(icnt <= no):
+    #     fact = fact * icnt
+    #     icnt = icnt + 1
 
-    if(iCnt <= No):
-        Fact = Fact * iCnt
-        iCnt = iCnt + 1
-        Factorial(No)
+    if(icnt <= no):
+        fact = fact * icnt
+        icnt = icnt + 1
+        factorial(no)
 
-    return Fact
+    return fact
 
 def main():
-    Result = Factorial(5)
-    print("Result : ",Result)
+    result = factorial(5)
+    print("result : ",result)
 
 if __name__ == "__main__":
     main()

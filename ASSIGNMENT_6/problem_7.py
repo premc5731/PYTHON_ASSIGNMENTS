@@ -2,16 +2,16 @@
 # Expected Input:
 # Enter 5 numbers: 23 89 12 56 45
 # Expected Output:
-# Maximum number is: 89
+# maximum number is: 89
 
 def Largest(Data):
-    Max = Data[0]
+    max = Data[0]
 
     for i in range(1,5):
-        if Data[i] > Max:
-            Max = Data[i]
+        if Data[i] > max:
+            max = Data[i]
     
-    return Max
+    return max
 
 
 def main():
@@ -21,9 +21,9 @@ def main():
     for i in range(5):
         IData.append(int(input()))
 
-    Ret = Largest(IData)
+    ret = Largest(IData)
 
-    print("Largest number is : ",Ret)
+    print("Largest number is : ",ret)
     
 if __name__ == "__main__":
     main()

@@ -1,47 +1,47 @@
-def Sum(No1,No2):
-    Ans = 0
-    Ans = No1 + No2
-    return Ans
+def Sum(no1,no2):
+    ans = 0
+    ans = no1 + no2
+    return ans
 
-def Difference(No1,No2):
-    Ans = 0
-    Ans = No1 - No2
-    return Ans
+def Difference(no1,no2):
+    ans = 0
+    ans = no1 - no2
+    return ans
 
-def Product(No1,No2):
-    Ans = 0
-    Ans = No1 * No2
-    return Ans
+def Product(no1,no2):
+    ans = 0
+    ans = no1 * no2
+    return ans
 
-def Division(No1,No2):
-    Ans = 0
+def Division(no1,no2):
+    ans = 0
     try:
-        Ans = No1 / No2
-        return Ans
+        ans = no1 / no2
+        return ans
     except ArithmeticError:
         print("Invalid denominator")
     
 
 def main():
     print("Enter first number : ",end="")
-    Value1 = int(input())
+    value1 = int(input())
 
     print("Enter second number : ",end="")
-    Value2 = int(input())
+    value2 = int(input())
 
-    Result = 0
+    result = 0
 
-    Result = Sum(Value1,Value2)
-    print("The Sum is : ",Result)
+    result = Sum(value1,value2)
+    print("The Sum is : ",result)
 
-    Result = Difference(Value1,Value2)
-    print("The Difference is : ",Result)
+    result = Difference(value1,value2)
+    print("The Difference is : ",result)
 
-    Result = Product(Value1,Value2)
-    print("The Product is : ",Result)
+    result = Product(value1,value2)
+    print("The Product is : ",result)
 
-    Result = Division(Value1,Value2)
-    print("The Division is : ",Result)
+    result = Division(value1,value2)
+    print("The Division is : ",result)
 
 if __name__ == "__main__":
     main()

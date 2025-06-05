@@ -4,22 +4,22 @@
 # Expected Input:
 # Enter temperature in Celsius: 25
 # Expected Output:
-# Temperature in Fahrenheit: 77.0°F
+# temperature in Fahrenheit: 77.0°F
 
-def CtoF(No):
-    Faren = 0.0
-    Faren = (No * 9/5) + 32
+def CtoF(no):
+    faren = 0.0
+    faren = (no * 9/5) + 32
 
-    return Faren
+    return faren
 
 def main():
-    Temp = 0.0
-    Result = 0.0
-    print("Enter Temperature in Celsius : ",end="")
-    Temp = float(input())
+    temp = 0.0
+    result = 0.0
+    print("Enter temperature in Celsius : ",end="")
+    temp = float(input())
     
-    Result = CtoF(Temp)
-    print("Temperature in Farenhit ",Result)
+    result = CtoF(temp)
+    print("temperature in farenhit ",result)
 
 if __name__ == "__main__":
     main()

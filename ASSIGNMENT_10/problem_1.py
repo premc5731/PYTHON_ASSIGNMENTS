@@ -7,10 +7,10 @@ Power = lambda x : x**2
 
 def main():
     print("Enter a number : ",end="")
-    Value = int(input())
+    value = int(input())
 
-    Ret = Power(Value)
-    print("Power of {} is {}".format(Value,Ret))
+    ret = Power(value)
+    print("Power of {} is {}".format(value,ret))
 
 if __name__ == "__main__":
     main()

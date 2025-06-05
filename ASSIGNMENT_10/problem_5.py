@@ -10,23 +10,23 @@
 
 from functools import reduce
 
-def Prime(No):
-    Flag = True
+def Prime(no):
+    flag = True
 
-    for i in range(2,(No // 2)+1):
-        if(No % i == 0):
-            Flag = False
+    for i in range(2,(no // 2)+1):
+        if(no % i == 0):
+            flag = False
             break
 
-    return Flag
+    return flag
 
 Mult = lambda x : x*2
 
-def Maximum(No1,No2):
-    if(No1 > No2):
-        return No1
+def Maximum(no1,no2):
+    if(no1 > no2):
+        return no1
     else:
-        return No2
+        return no2
 
 def main():
     print("Enter size : ",end = "")
@@ -43,8 +43,8 @@ def main():
     MData = list(map(Mult,FData))
     print("Mapped Data : ",MData)
 
-    Result = reduce(Maximum,MData)
-    print("Reduced result : ",Result)
+    result = reduce(Maximum,MData)
+    print("Reduced result : ",result)
 
 if __name__ == "__main__":
     main()

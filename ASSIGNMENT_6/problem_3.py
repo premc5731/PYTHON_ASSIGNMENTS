@@ -7,16 +7,16 @@
 # ...
 # 7 x 10 = 70
 
-def Multiplication(No):
+def Multiplication(no):
 
     for i in range(1,11):
-        print(No," x ",i," = ",(No*i))
+        print(no," x ",i," = ",(no*i))
     
 
 def main():
     print("Enter a number : ",end="")
-    Value = int(input())
-    Multiplication(Value)
+    value = int(input())
+    Multiplication(value)
 
 if __name__ == "__main__":
     main()

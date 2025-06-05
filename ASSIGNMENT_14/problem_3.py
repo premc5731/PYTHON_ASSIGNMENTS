@@ -4,20 +4,20 @@
 
 class Book:
     def __init__(self):
-        self.Price = 0
+        self.price = 0
 
     def Get_Price(self):
-        return self.Price
+        return self.price
     
     def Set_Price(self,price):
-        self.Price = price
+        self.price = price
 
 def main():
     Ret = 0
     Obj = Book()
     Obj.Set_Price(1000)
     Ret = Obj.Get_Price()
-    print("Price of book is : ",Ret)
+    print("price of book is : ",Ret)
 
 if __name__ == "__main__":
     main()

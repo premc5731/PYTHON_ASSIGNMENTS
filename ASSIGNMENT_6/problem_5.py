@@ -4,29 +4,29 @@
 # Expected Output:
 # 11 is a prime number.
 
-def ChkPrime(No):
-    if No < 0:
-        No = -No
+def ChkPrime(no):
+    if no < 0:
+        no = -no
         
-    Flag = True
+    flag = True
 
-    for i in range(2, (No//2)+1):
-        if No % i == 0:
-            Flag = False
+    for i in range(2, (no//2)+1):
+        if no % i == 0:
+            flag = False
             break
 
-    return Flag
+    return flag
 
 def main():
     print("Enter a number : ",end="")
-    Value = int(input())
+    value = int(input())
 
-    Ret = ChkPrime(Value)
+    ret = ChkPrime(value)
 
-    if Ret == True:
+    if ret == True:
         print("It is prime number")
     else:
-        print("It is Not a prime number")
+        print("It is not a prime number")
     
 
 if __name__ == "__main__":

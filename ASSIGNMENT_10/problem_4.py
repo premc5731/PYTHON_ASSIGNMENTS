@@ -30,8 +30,8 @@ def main():
     MData = list(map(Square,FData))
     print("Mapped Data : ",MData)
 
-    Result = reduce(Summation,MData)
-    print("Reduced result : ",Result)
+    result = reduce(Summation,MData)
+    print("Reduced result : ",result)
 
 if __name__ == "__main__":
     main()

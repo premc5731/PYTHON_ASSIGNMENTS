@@ -8,8 +8,8 @@ import os
 def Square(RData):
     print("process id :",os.getpid())
     for i in RData:
-        SNo = i*i
-        print("square of {} is {}".format(i,SNo))
+        s_no = i*i
+        print("square of {} is {}".format(i,s_no))
 
 
 

@@ -5,26 +5,26 @@
 # Expected Output:
 # 17 is an odd number.
 
-def CheckEven(No):
-    Result = False
+def CheckEven(no):
+    result = False
 
-    if No % 2 == 0:
-        Result = True
+    if no % 2 == 0:
+        result = True
     
-    return Result
+    return result
 
 def main():
-    Ret = False
+    ret = False
     print("Enter a number : ",end="")
-    Value = int(input())
+    value = int(input())
 
-    Ret = CheckEven(Value)
+    ret = CheckEven(value)
 
-    if Ret == True:
-        print(f"{Value} is Even")
+    if ret == True:
+        print(f"{value} is Even")
 
     else:
-        print(f"{Value} is Odd")
+        print(f"{value} is Odd")
 
 if __name__ == "__main__":
     main()

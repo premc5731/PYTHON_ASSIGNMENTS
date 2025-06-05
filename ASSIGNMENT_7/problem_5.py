@@ -4,27 +4,27 @@
 # Expected Output:
 # radar is a palindrome.
 
-def PalindromeCheck(Str):
-    Flag = True
+def PalindromeCheck(str):
+    flag = True
     start = 0
-    end = len(Str)-1
+    end = len(str)-1
 
     while(start < end):
-        if Str[start] != Str[end]:
-            Flag = False
+        if str[start] != str[end]:
+            flag = False
             break
         start +=1
         end -=1
 
-    return Flag
+    return flag
 
 def main():
     print("Enter a string :",end="")
-    iStr = input()
+    istr = input()
 
-    Ret = PalindromeCheck(iStr)
+    ret = PalindromeCheck(istr)
 
-    if Ret == True:
+    if ret == True:
         print("It is palindrome")
 
     else:

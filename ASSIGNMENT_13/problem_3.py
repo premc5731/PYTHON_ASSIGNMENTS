@@ -1,5 +1,5 @@
 # 3. Write a program which contains one class named as Numbers.
-# Arithmetic class contains one instance variables as Value.
+# Arithmetic class contains one instance variables as value.
 # Inside init method initialise that instance variables to the value which is accepted from user.
 # There are four instance methods inside class as ChkPrime(), ChkPerfect(), SumFactors(),
 # Factors().
@@ -11,64 +11,64 @@
 # After designing the above class call all instance methods by creating multiple objects.
 
 class Numbers:
-    def __init__(self,No):
-        self.No = No
+    def __init__(self,no):
+        self.no = no
 
     def SumFactors(self):
-        Sum = 0
-        for i in range(1,(self.No // 2)+ 1):
-            if((self.No % i) == 0):
-                Sum = Sum + i
-        return Sum
+        sum = 0
+        for i in range(1,(self.no // 2)+ 1):
+            if((self.no % i) == 0):
+                sum = sum + i
+        return sum
     
     def ChkPrime(self):
-        Flag = True
-        Result = Numbers.SumFactors(self)
+        flag = True
+        result = Numbers.SumFactors(self)
 
-        if Result == 1:
-            Flag = True
+        if result == 1:
+            flag = True
         else:
-            Flag = False
+            flag = False
 
-        return Flag
+        return flag
     def ChkPerfect(self):
-        Result = Numbers.SumFactors(self)
-        Flag = False
+        result = Numbers.SumFactors(self)
+        flag = False
 
-        if(Result == self.No):
-            Flag = True
+        if(result == self.no):
+            flag = True
         else:
-            Flag = False
-        return Flag
+            flag = False
+        return flag
     
     def Factors(self):
-        for i in range(1,(self.No // 2)+1):
-            if(self.No % i == 0):
+        for i in range(1,(self.no // 2)+1):
+            if(self.no % i == 0):
                 print("factor : ",i)
 
 def main():
-    Ret = False
+    ret = False
     print("Enter a number : ",end ="")
-    Value = int(input())
+    value = int(input())
 
-    Obj1 = Numbers(Value)
+    Obj1 = Numbers(value)
 
-    Ret = Obj1.ChkPrime()
-    if Ret == True:
-        print(Value,"is prime number")
+    ret = Obj1.ChkPrime()
+    if ret == True:
+        print(value,"is prime number")
     else:
-        print(Value,"is not a prime number")
+        print(value,"is not a prime number")
 
-    Ret = Obj1.ChkPerfect()
-    if Ret == True:
-        print(Value,"is perfect number")
+    ret = Obj1.ChkPerfect()
+    if ret == True:
+        print(value,"is perfect number")
     else:
-        print(Value,"is not a perfect number")
+        print(value,"is not a perfect number")
 
     Obj1.Factors()
 
-    Ret = Obj1.SumFactors()
-    print("Summmation of factors is : ",Ret)
+    ret = Obj1.SumFactors()
+    print("summmation of factors is : ",ret)
 
 if __name__ == "__main__":
     main()

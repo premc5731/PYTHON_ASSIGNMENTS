@@ -5,37 +5,37 @@
 # Expected Output:
 # Largest number is 9.
 
-def Largest(No1, No2, No3):
-    LValue = 0
-    if No1 > No2:
-        if No1 > No3:
-            LValue = No1
-    elif No2 > No3:
-        LValue = No2
+def Largest(no1, no2, no3):
+    lvalue = 0
+    if no1 > no2:
+        if no1 > no3:
+            lvalue = no1
+    elif no2 > no3:
+        lvalue = no2
     else:
-        LValue = No3
+        lvalue = no3
 
-    return LValue
+    return lvalue
 
 
 def main():
-    Value1 = 0
-    Value2 = 0
-    Value3 = 0
-    Ret = 0
+    value1 = 0
+    value2 = 0
+    value3 = 0
+    ret = 0
 
     print("Enter first number : ",end="")
-    Value1 = int(input())
+    value1 = int(input())
 
     print("Enter second number : ",end="")
-    Value2 = int(input())
+    value2 = int(input())
 
     print("Enter third number : ",end="")
-    Value3 = int(input())
+    value3 = int(input())
 
-    Ret = Largest(Value1,Value2,Value3)
+    ret = Largest(value1,value2,value3)
 
-    print("Largest number is : ",Ret)
+    print("Largest number is : ",ret)
 
 if __name__ == "__main__":
     main()

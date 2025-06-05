@@ -13,14 +13,14 @@ product = lambda x,y: x*y
 def main():
     Data = []
     print("Enter a number : ",end="")
-    Value = int(input())
+    value = int(input())
 
-    for i in range(Value):
+    for i in range(value):
         Data.append(int(input()))
 
-    Result = reduce(product,Data)
+    result = reduce(product,Data)
 
-    print("Product of numbers is : ",Result)
+    print("Product of numbers is : ",result)
 
 if __name__ == "__main__":
     main()

@@ -1,27 +1,27 @@
-# 3. Sum of Digits
+# 3. sum of digits
 # Write a recursive function to calculate the sum of digits of a number.
 # sum_of_digits(1234) → 10
 
-Sum = 0
-def SumDigits(No):
-    global Sum
+sum = 0
+def SumDigits(no):
+    global sum
 
-    # while(No != 0):
-    #     Digit = No % 10
-    #     Sum = Sum + Digit
-    #     No = No // 10
+    # while(no != 0):
+    #     digit = no % 10
+    #     sum = sum + digit
+    #     no = no // 10
 
-    if(No != 0):
-        Digit = No % 10
-        Sum = Sum + Digit
-        No = No // 10
-        SumDigits(No)
+    if(no != 0):
+        digit = no % 10
+        sum = sum + digit
+        no = no // 10
+        SumDigits(no)
 
-    return Sum
+    return sum
 
 def main():
-    Result = SumDigits(1234)
-    print("Result : ",Result)
+    result = SumDigits(1234)
+    print("result : ",result)
 
 if __name__ == "__main__":
     main()

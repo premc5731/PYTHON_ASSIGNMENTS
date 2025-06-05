@@ -5,21 +5,21 @@
 # Expected Output:
 # Prime numbers: [11, 13, 17]
 
-def ChkPrime(No):
-    Flag = True
-    for i in range(2,(No//2)+1):
-        if No % i == 0:
-            Flag = False
+def ChkPrime(no):
+    flag = True
+    for i in range(2,(no//2)+1):
+        if no % i == 0:
+            flag = False
             break
 
-    return Flag
+    return flag
 
 def main():
     Data = []
     print("Enter a number : ",end="")
-    Value = int(input())
+    value = int(input())
 
-    for i in range(Value):
+    for i in range(value):
         Data.append(int(input()))
 
     FData = list(filter(ChkPrime,Data))

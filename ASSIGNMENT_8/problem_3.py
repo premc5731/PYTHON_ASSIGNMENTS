@@ -5,30 +5,30 @@
 
 import threading
 
-def EvenList(Elist):
-    Sum = 0
-    for i in Elist:
+def EvenList(e_list):
+    sum = 0
+    for i in e_list:
         if i % 2 == 0:
-            Sum = Sum + i
+            sum = sum + i
 
-    print("Evenlist Sum : ",Sum)
+    print("Evenlist sum : ",sum)
 
-def OddList(Olist):
-    Sum = 0
-    for i in Olist:
+def OddList(o_list):
+    sum = 0
+    for i in o_list:
         if i % 2 != 0:
-            Sum = Sum + i
+            sum = sum + i
 
-    print("Oddlist Sum : ",Sum)
+    print("Oddlist sum : ",sum)
 
 
 
 def main():
     Data = []
     print("Enter a number : ",end="")
-    Value = int(input())
+    value = int(input())
 
-    for i in range(Value):
+    for i in range(value):
         Data.append(int(input()))
 
     T1 = threading.Thread(target = EvenList,args = (Data,))

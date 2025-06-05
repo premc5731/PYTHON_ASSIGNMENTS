@@ -6,32 +6,32 @@
 import threading
 
 
-def SumSmall(Data):
-    Sum = 0
-    for c in Data:
+def SumSmall(data):
+    sum = 0
+    for c in data:
         if c.islower():
-            Sum += 1
+            sum += 1
     print("")
-    print("Number of small characters : ",Sum)
+    print("Number of small characters : ",sum)
 
-def SumCap(Data):
-    Sum = 0
-    for c in Data:
+def SumCap(data):
+    sum = 0
+    for c in data:
         if c.isupper():
-            Sum += 1
+            sum += 1
     print("")
-    print("Number of capital characters : ",Sum)
+    print("Number of capital characters : ",sum)
 
-def SumDig(Data):
-    Sum = 0
-    for c in Data:
+def SumDig(data):
+    sum = 0
+    for c in data:
         if c.isdigit():
-            Sum += 1
+            sum += 1
     print("")
-    print("Number of digits characters : ",Sum)
+    print("Number of digits characters : ",sum)
 
 def main():
-    Data = []
+    data = []
     print("Enter a String : ",end="")
     istr = input()
 
