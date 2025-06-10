@@ -1,0 +1,6 @@
+This is a short line.
+This line has exactly five words.
+Python is a popular programming language used worldwide.
+Hi.
+Learning Python step by step is very useful.
+End.
